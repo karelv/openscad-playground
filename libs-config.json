@@ -4,7 +4,17 @@
         "target": "libs/openscad-wasm"
     },
     "libraries": [
-        
+        {
+            "name": "openscad",
+            "repo": "https://github.com/openscad/openscad.git",
+            "branch": "master",
+            "zipIncludes": [
+                "examples/**/*.scad"
+            ],
+            "zipExcludes": [
+                "**/tests/**"
+            ]
+        }        
     ],
     "fonts": {
         "notoFonts": [
